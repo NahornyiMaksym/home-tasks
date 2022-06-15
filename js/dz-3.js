@@ -22,7 +22,7 @@ while (count > 0) {
 let userNumb = Number(prompt('Enter your positive number'));
 let symb = '';
 for (userNumb; userNumb > 0; userNumb--) {
-    symb += '.#'
+    symb += '.#';
 }
 console.log(symb);
 
