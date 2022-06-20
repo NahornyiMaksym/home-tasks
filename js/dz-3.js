@@ -93,5 +93,14 @@ for (i; i <= 50; i ++) {
 
 // 6) Вывтдите текущую дату и время, учитывая часовой пояс
 let nowDate = new Date();
-console.log(nowDate);
+console.log(nowDate); //Fri Jun 17 2022 13:32:24 GMT+0300 (Восточная Европа, летнее время)
+console.log(nowDate.getTimezoneOffset());
+const timeZone = (nowDate.getTimezoneOffset()) / -60;
+if (timeZone > 0) {
+    console.log(`Your time-zone is +${timeZone} from GMT`);
+} else if (timeZone === 0) {
+    console.log(`Your time-zone is ${timeZone} from GMT`);
+} else {
+    console.log(`Your time-zone is ${timeZone} from GMT`);
+};
 
