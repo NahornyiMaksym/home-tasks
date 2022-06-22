@@ -61,6 +61,7 @@ const arrayOne = ['dog', 'cat', 'bird', 'rabbit', 'horse'];
 const arrayTwo = ['apple', 'car', 'cat', 'ball', 'horse'];
 const arrayThree = [];
 
+const array3 = arrayTwo.filter(element => arrayOne.includes(element)); // 1 способ
 
 for (let i of arrayTwo) {
     if (arrayOne.includes(i)) {
@@ -70,3 +71,4 @@ for (let i of arrayTwo) {
 console.log(arrayOne);
 console.log(arrayTwo);
 console.log(arrayThree);
+console.log(array3);
