@@ -24,7 +24,7 @@ console.log(mainArray);
 
 // Сложить все четные элементы массива
 const initialValue = 0;
-const sum = mainArray.reduce((prevValue, currentValue) => currentValue % 2 ? prevValue : prevValue + currentValue, 0);
+const sum = mainArray.reduce((prevValue, currentValue) => currentValue % 2 ? prevValue : prevValue + currentValue, initialValue); // можно просто добавить 0 вместо создания переменной initialValue, сделал для себя для наглядности
 console.log(`сумма четных используя reduce ${sum}`);
 
 let amount = 0;
