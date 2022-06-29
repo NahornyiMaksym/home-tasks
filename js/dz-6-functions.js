@@ -22,7 +22,6 @@ function filterArray (array, ...args) {
         return 'no arguments';
     }
     return array.filter(element => !args.includes(element));
-
 }
 console.log(`Filtered - ${filterArray(array2, false, undefined, '', 0, null)}`);
 
