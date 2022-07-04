@@ -27,11 +27,11 @@ let triangle = {
         return ( this.aSide === this.bSide === this.cSide) ? 'Треугольник равносторонний' : 'Треугольник не равносторонний';
     },
 }
-// triangle.setValues();
+triangle.setValues();
 
-// console.log(`A = ${triangle.aSide}, B = ${triangle.bSide}, C = ${triangle.cSide}`);
-// console.log(`Perimeter = ${triangle.getPerimeter()}`);
-// console.log(triangle.isEqualSides());
+console.log(`A = ${triangle.aSide}, B = ${triangle.bSide}, C = ${triangle.cSide}`);
+console.log(`Perimeter = ${triangle.getPerimeter()}`);
+console.log(triangle.isEqualSides());
 console.log('=============================');
 
 // 2) Создайте объект calculator с методами:
@@ -64,12 +64,12 @@ const calculator = {
     }
 }
 
-// calculator.read();
-// console.log(`x = ${calculator.x}, y = ${calculator.y}`);
-// console.log(`x + y = ${calculator.sum()}`);
-// console.log(`x * y = ${calculator.multi()}`);
-// console.log(`x - y = ${calculator.diff()}`);
-// console.log(`x / y = ${calculator.div()}`);
+calculator.read();
+console.log(`x = ${calculator.x}, y = ${calculator.y}`);
+console.log(`x + y = ${calculator.sum()}`);
+console.log(`x * y = ${calculator.multi()}`);
+console.log(`x - y = ${calculator.diff()}`);
+console.log(`x / y = ${calculator.div()}`);
 
 console.log('========================================');
 
@@ -108,4 +108,4 @@ function logIt(){
     console.log(text);
     var text = 'inside';
 }
-logIt(); // Выводит undefined, потому что происходит вначале НАЗНАЧЕНИЕ переменной text внутри функции, потом выводится переменная в консоль, а потом происходит ОБЪЯВЛЕНИЕ переменной, то есть движок JS видит это так var text - это перебивает значение переменной назначенной вне функции выше, console.log(text), text = 'inside'.
+logIt(); // Выводит undefined, потому что происходит вначале НАЗНАЧЕНИЕ переменной text внутри функции, потом выводится переменная в консоль, а потом происходит ОБЪЯВЛЕНИЕ переменной, то есть движок JS видит это так  1 - (var text) - это перебивает значение переменной назначенной вне функции выше, 2 - console.log(text), 3 - (text = 'inside').
