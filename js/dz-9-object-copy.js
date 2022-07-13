@@ -2,7 +2,7 @@ const object1 = {
 
     a: 5,
 
-    b: { g: 8, y: 9, h : function () {return 5*10}, t: { q: 48 } },
+    b: { g: 8, y: 9, h : function () {return 5*10}, t: { q: 48 }},
 
     x: 47,
 
@@ -44,6 +44,17 @@ newObj2.b.g = 1000;
 newObj2.b.t.q = 3000;
 console.log('original var2', object1);
 
+const keys = [];
+
+function reviewObj () {
+    for (let key in this) {
+        if (typeof this[key] === 'object') {
+
+        }
+    }
+}
+
+reviewObj.bind(object1)();
 // function objFind (copiedObject) {
 //     for (let key in this) {
 //         // typeof this[key] === 'object' ? copiedObject[key] = {...this[key]} : copiedObject[key] = this[key];
