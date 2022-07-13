@@ -75,14 +75,26 @@ hello('Tommy');
 //
 // }
 
-function showNumbers (from, to, interval){
-   for (let i = from; i <= to; i++) {
-       let res = i;
-       setTimeout( () => console.log(res), res * interval);
-    }
-}
-showNumbers(1,5,500);
+//=============== for ====================== закомментировал, чтоб не мешало в визуализации
 
+// function showNumbers (from, to, interval){
+//    for (let i = from; i <= to; i++) {
+//        let res = i;
+//        setTimeout( () => console.log(res), res * interval);
+//     }
+// }
+// showNumbers(1,5,500);
+
+//====================== Interval ========================
+function  showNumbers3 (from, to, interval) {
+    let period = setInterval(() => {
+        if (from === to) {
+            clearInterval(period);
+        }
+        return console.log(from++);
+    }, interval);
+}
+showNumbers3(1, 5, 500);
 
 // ====================== recursion ===============================
 
