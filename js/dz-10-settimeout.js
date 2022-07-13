@@ -16,20 +16,9 @@ let coffeeMachine = {
 };
 
 
-// coffeeMachine.start(); // 'Your coffee is ready!'
+coffeeMachine.start(); // 'Your coffee is ready!'
 
 
-// let coffeeMachine = {
-//     message: 'Your coffee is ready!',
-//     start: function() {
-//         let output = setTimeout(function() {
-//             console.log(this.message);
-//         }, 3000);
-//         output.call(coffeeMachine);
-//     }
-// };
-
-// coffeeMachine.start(); // 'Your coffee is ready!'
 
 // Создайте объект teaPlease со свойством message: 'Wanna some tea instead of coffee?'. Обновите методу start() контекст так, чтобы он выводил сообщение с нового объекта.
 
@@ -42,17 +31,7 @@ tea();
 coffeeMachine.start.call(teaPlease); // decision 2
 
 // 2) Напишите функцию concatStr(), которая соединяет две строки, разделенные каким-то символом: разделитель и строки передаются в параметрах функции. Используя привязку аргументов с помощью bind, создайте новую функцию hello(), которая которая выводит приветствие тому, кто передан в ее параметре:
-//
-// function concatStr(string1, devSymbol, string2 ) {
-//     console.log( string1 + devSymbol + string2 );
-// }
-//
-// let hello = function (string) {
-//     return concatStr(string);
-// }
-//
-// concatStr('Name', '+', 'Text');
-// hello('New');
+
 
 const stringObj = {
     string1 : 'Gerald',
@@ -104,7 +83,10 @@ function showNumbers (from, to, interval){
 }
 showNumbers(1,5,500);
 
-// function showNumbers2 (from, to, interval, i = 0) { // recursion
+
+// ====================== recursion ===============================
+
+// function showNumbers2 (from, to, interval, i = 0) {
 //     if (i === to) {
 //         return setTimeout(() => console.log('finished'), i * interval)
 //     }
