@@ -21,7 +21,11 @@ tr {
   border: 1px solid #000; }
 
 table {
-  border: 1px solid #000; }
+  border: 1px solid #000;
+  padding: 10px; }
+
+.m-10 {
+  margin: 10px; }
 
 td {
   border: 1px solid #000; }

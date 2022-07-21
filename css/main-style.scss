@@ -22,12 +22,20 @@ body {
 tr {
   border: 1px solid #000;
 }
+
 table {
   border: 1px solid #000;
+  padding: 10px;
 }
+
+.m-10 {
+  margin: 10px;
+}
+
 td {
   border: 1px solid #000;
 }
+
 .background {
   background-color: grey;
   box-shadow: 0 -10px #000;
