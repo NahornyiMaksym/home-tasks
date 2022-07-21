@@ -52,14 +52,14 @@ setInterval(() => changeColor(), 2000);
 // написать функцию которая посторит из него таблицу при помощи цикла и добавления элементов в DOM
 
 const array1 = [[1,2,3],[4,5,6],[7,8,9]];
-
+const body = document.querySelector('body');
+const table = document.createElement('table');
+body.append(table); // добавили таблицу в конец body
 
 function createTable (someArray) {
-    const body = document.querySelector('body');
-    const table = document.createElement('table');
-    body.append(table); // добавили таблицу в конец body
 
     for (let i in someArray) {
+
         let row = document.createElement('tr');
         table.append(row); // в зависимости от длины массива создаются ряды в таблице
         let innerArray = someArray[i]; // записываем вложенный массив в переменную
