@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  padding-left: 20px; }
+
+input {
+  display: block; }
+
+.P3form1 {
+  margin: 10px 0; }
+
+.P3borders {
+  border: 1px solid #000;
+  margin-left: 20px;
+  display: inline-block;
+  padding: 10px; }
+
+.P3btn1 {
+  padding: 5px 10px;
+  margin-bottom: 20px; }
+
+.P3container {
+  display: flex;
+  list-style: none; }
+
+.P3colorBox {
+  box-sizing: border-box;
+  margin: 20px 10px;
+  max-width: 50px;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  transition: all 0.2s; }
+  .P3colorBox:last-child {
+    border: 2px solid #000; }
+  .P3colorBox:hover {
+    transform: scale(1.2); }
+  .P3colorBox:active {
+    transform: scale(1); }
+
+canvas {
+  border: 1px solid #000; }
+
+.P3bgRed {
+  background-color: red; }
+
+.P3bgGreen {
+  background-color: green; }
+
+.P3bgBlue {
+  background-color: blue; }
+
+/*# sourceMappingURL=page3.css.map */
