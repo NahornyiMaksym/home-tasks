@@ -1,48 +1,44 @@
-* {
-  padding: 0;
-  margin: 0;
-}
+//* {
+//  padding: 0;
+//  margin: 0;
+//}
 
-body {
-  padding-left: 20px;
-}
+//body {
+//  padding-left: 20px;
+//}
 
 input {
   display: block;
 }
 
-.form1 {
+.P3form1 {
   margin: 10px 0;
 }
 
-.borders {
+.P3borders {
   border: 1px solid #000;
   margin-left: 20px;
   display: inline-block;
   padding: 10px;
 }
 
-.btn1 {
+.P3btn1 {
   padding: 5px 10px;
   margin-bottom: 20px;
 }
 
-.container {
-  max-width: 500px;
-  margin: auto;
-  text-align: center;
+.P3container {
   display: flex;
   list-style: none;
 }
 
-.colorBox {
+.P3colorBox {
   box-sizing: border-box;
   margin: 20px 10px;
   max-width: 50px;
   height: 50px;
   text-align: center;
   width: 100%;
-  //display: inline-block;
   &:last-child {
     border: 2px solid #000;
   }
@@ -59,15 +55,15 @@ canvas {
   border: 1px solid #000;
 }
 
-.bgRed {
+.P3bgRed {
   background-color: red;
 }
 
-.bgGreen {
+.P3bgGreen {
   background-color: green;
 }
 
-.bgBlue {
+.P3bgBlue {
   background-color: blue;
 }
 
