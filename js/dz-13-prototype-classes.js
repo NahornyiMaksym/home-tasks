@@ -54,7 +54,7 @@ console.log('aspirant2 ==>', aspirant2.isGrantHolder());
 console.log('======================================');
 console.log(aspirant);
 for (let i in aspirant) {
-    console.log(i);
+    console.log(i + ' ==> ' + aspirant[i]);
 }
 
 
